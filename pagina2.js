@@ -9,7 +9,6 @@ function checkRiddle() {
   }
 }
 
-
 function checkPassword() {
   const password = document.getElementById("passwordInput").value.trim();
 
