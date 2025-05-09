@@ -1,13 +1,14 @@
 function checkRiddle() {
   const input = document.getElementById("riddleAnswer").value.trim();
-  const correct = "2409"; // 24 = dia | 04+2025 = 2029 → 2+0+2+9 = 13 → 2409 como quebra lógica (mistério)
+  const correct = "645428"; // Nova resposta lógica: 6 (dia) + 4 (mês) + 5 (último dígito do ano) + 4 (amor) + 5 (carol) + 28 (soma de dia + mês)
 
   if (input === correct) {
     document.getElementById("passwordSection").classList.remove("hidden");
   } else {
-    alert("Hmm... tente novamente. Pense no que essa data significa para nós.");
+    alert("Hmm... tente novamente. Cada número tem um segredo profundo, assim como nossa jornada.");
   }
 }
+
 
 function checkPassword() {
   const password = document.getElementById("passwordInput").value.trim();
