@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O Enigma do Coração</title>
+  <link rel="stylesheet" href="pagina2.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>O Enigma do Coração</h1>
+
+    <div class="riddle">
+      <p>
+        🔐 Três pistas te separam do próximo passo.  
+        Use sua intuição, o amor sabe o caminho.
+      </p>
+
+      <div class="puzzle">
+        <p>
+          <strong>Pergunta:</strong><br>
+          “Sou um número de quatro dígitos.  
+          Os dois primeiros representam um dia especial.  
+          Os dois últimos, a soma dos números do mês e do ano final.  
+          Quem sou eu?”
+        </p>
+
+        <input type="text" id="riddleAnswer" placeholder="Sua resposta..." />
+        <button onclick="checkRiddle()">Enviar</button>
+      </div>
+    </div>
+
+    <div id="passwordSection" class="hidden">
+      <p>🧩 Muito bem. Agora digite a senha verdadeira para revelar a surpresa:</p>
+      <input type="password" id="passwordInput" placeholder="DD/MM/AAAA" />
+      <button onclick="checkPassword()">Confirmar</button>
+    </div>
+
+    <div id="successMessage" class="hidden">
+      <h2>🎉 Surpresa desbloqueada!</h2>
+      <p>Carol, este é só o começo do infinito que quero viver com você.</p>
+      <a href="surpresa.html">Clique aqui para ver o que te espera →</a>
+    </div>
+  </div>
+
+  <script src="pagina2.js"></script>
+</body>
+</html>
