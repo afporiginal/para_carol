@@ -66,3 +66,11 @@ body, html {
 .next-button a:hover {
   background: #ff1e3c;
 }
+.next-button {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
