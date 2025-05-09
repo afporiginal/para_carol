@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Georgia', serif;
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black url('assets/img/stars.gif') repeat;
+  z-index: -1;
+  opacity: 0.2;
+  animation: moveStars 60s linear infinite;
+}
+
+@keyframes moveStars {
+  from { background-position: 0 0; }
+  to { background-position: -10000px 10000px; }
+}
+
+.content {
+  padding: 10vh 15vw;
+}
+
+.poema {
+  margin-bottom: 60vh;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease;
+}
+
+.poema.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.next-button {
+  text-align: center;
+  margin-top: 20vh;
+}
+
+.next-button a {
+  font-size: 1.2rem;
+  background: #ff4b5c;
+  padding: 1rem 2rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.next-button a:hover {
+  background: #ff1e3c;
+}
